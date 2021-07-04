@@ -1,0 +1,103 @@
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+span {
+  color: #9381ff;
+}
+form {
+  width: 100%;
+  padding: 10px;
+}
+label {
+  display: block;
+}
+
+input {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #9381ff;
+}
+
+input:focus {
+  border: none;
+}
+img {
+  width: 500px;
+  height: 500px;
+}
+
+textarea {
+  display: block;
+  font-size: 16px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #9381ff;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.contact-flex {
+  display: flex;
+  justify-content: space-around;
+  /* background: #9381ff; */
+}
+.social-media {
+  color: #000000;
+}
+.social-media a i {
+  margin-bottom: 25px;
+}
+
+#form-btn {
+  background-color: #3a0ca3;
+  color: #ffffff;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+.far {
+  color: #3d348b;
+}
+
+.fa-github {
+  color: #3d348b;
+}
+
+@media only screen and (max-width: 500px) {
+  .contact-flex {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-media {
+    display: flex;
+  }
+  .form {
+    margin: none;
+  }
+  .form input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+  .social-media a {
+    margin-right: 10px;
+  }
+}

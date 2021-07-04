@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="navbar_logo"><h1>M.Y</h1></div>
+      <div class="navbar">
+        <div class="navbar_links">
+          <ul class="navbar_flex">
+            <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+            <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+            <li><a routerLink="/skills" routerLinkActive="active">Skills</a></li>
+            <li><a routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
+            <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+          </ul>
+        </div>
+        <a (click)="toggleMenu()" ><i class="fas fa-bars fa-3x" id="hamberger-menu"></i></a>
+      </div>
+      <ul class="menu" *ngIf="hamberger">
+        <div (click)="change()">
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/about">About</a></li>
+        <li><a routerLink="/skills">Skills</a></li>
+        <li><a routerLink="/portfolio">Portfolio</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </div>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.contact {
+  margin: 60px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+th,
+td {
+  padding: 15px;
+}
+
+span {
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+button {
+  background-color: #3a0ca3;
+  color: #ffffff;
+  padding: 10px 5px;
+  border-radius: 5px;
+  float: right;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .resume-header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .contact {
+    margin: 20px 0px;
+  }
+}

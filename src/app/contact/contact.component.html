@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="title">
+    <h1>Drop A <span>Line</span></h1>
+  </div>
+    <div class="contact-flex">
+      <div class="form">
+        <form (ngSubmit) = onSM(f) #f="ngForm">
+        <input type="text" name="firstname" id="firstname" placeholder="First Name" ngModel required>
+        <input type="text" name="secondname" id="secondname" placeholder="Second Name" ngModel required>
+        <input type="email" name="email" id="email" placeholder="Email" ngModel required>
+        <textarea id="textarea" placeholder="Your Message"cols="42" rows="6" name ="message" ngModel required></textarea>
+        <button id="form-btn" type="submit" [disabled]= "!f.valid">Send Message</button>
+      </form>
+     </div>
+      <div class="social-media">
+       <a href="https://github.com/mohammedyasheer?tab=repositories" target="_blank"> <i class="fab fa-github fa-3x"></i>GIT</a><br>
+       <p><i class="far fa-envelope fa-3x "></i> muhamedyashir@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</div>
